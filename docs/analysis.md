@@ -249,9 +249,3 @@ inventory planning. - **Cross-Selling**: Leverage strong product
 associations (e.g., Binders and Paper) to drive larger baskets through
 bundling and recommendations. - **Forecasting**: Prepare for projected
 2019 sales growth, particularly in Q4, based on accurate forecasts.
-
-The project's rigorous analyses, supported by clear visualizations,
-demonstrate proficiency in data science and business analytics. By
-providing actionable recommendations, it serves as a valuable tool for
-retail decision-making and a showcase of advanced analytical skills
-suitable for professional portfolios.

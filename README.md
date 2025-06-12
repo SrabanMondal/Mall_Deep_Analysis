@@ -29,6 +29,10 @@ Key features include:
 The project is hosted on GitHub, with unit tests for reliability and
 detailed documentation for reproducibility.
 
+## Deep Analysis
+Click below to look at the analysis
+[Go to Analysis Report](docs/analysis.md)
+
 ## Project Structure
 ```
     retail_analytics/
@@ -126,7 +130,7 @@ up to four recommended products.
 
     ``` bash
     git clone https://github.com/yourusername/retail_analytics.git
-    cd retail_analytics
+    cd Mall_Deep_Analysis
     ```
 
 2.  Install dependencies:
@@ -135,20 +139,18 @@ up to four recommended products.
     pip install -r requirements.txt
     ```
 
-3.  Download the Superstore dataset and place it in
-    `data/raw/train.csv`:
-
-    -   \[Link to dataset, e.g., Kaggle Superstore dataset\]
-    -   Alternatively, use a sample dataset (`data/raw/sample.csv`) for
-        testing.
-
 ### Docker Setup
 
 To run the FastAPI application using Docker: 1. Ensure Docker is
 installed and running. 2. Build the Docker image:
-`bash    docker build -t retail-analytics-api .` 3. Run the container:
-`bash    docker run -p 8000:8000 retail-analytics-api` 4. Access the API
-at `http://localhost:8000/docs`.
+```bash    
+docker build -t retail-analytics-api .
+``` 
+3. Run the container:
+```bash    
+docker run -p 8000:8000 retail-analytics-api
+```
+4. Access the API at `http://localhost:8000/docs`.
 
 > **Note**: The `Dockerfile` assumes the dataset (`train.csv`) is
 > included in `data/raw/`. If using a large dataset, modify the
@@ -162,7 +164,7 @@ Execute the full analysis pipeline (sales, churn, forecasting, basket
 analysis, recommendations):
 
 ``` bash
-python main.py
+python -m main
 ```
 
 This generates visualizations in `docs/visualizations/` and prints key
@@ -213,8 +215,8 @@ This executes tests in `tests/` for all modules, including
 ## API Documentation
 
 The FastAPI application provides a Swagger UI at
-`http://localhost:8000/docs` for testing the `/recommend` endpoint. The
-endpoint accepts: - `customer_name` (str): Name of the customer (e.g.,
+`http://localhost:8000/docs` for testing the `/recommend` endpoint.
+The endpoint accepts: - `customer_name` (str): Name of the customer (e.g.,
 "Micky"). - `cart` (list\[str\], optional): List of products in the cart
 (e.g., \["Paper", "Binders"\]). - `category` (str, optional): Product
 category for recommendations (e.g., "Phones").
