@@ -129,7 +129,7 @@ up to four recommended products.
 1.  Clone the repository:
 
     ``` bash
-    git clone https://github.com/SrabanMondal/Mall_Deep_Analysis
+    git clone https://github.com/SrabanMondal/Mall_Deep_Analysis.git
     cd Mall_Deep_Analysis
     ```
 
